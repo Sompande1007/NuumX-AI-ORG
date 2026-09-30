@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#3a6fd0" />
+  <title>NuumX — Hire AI Employees</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/motion.css" />
+  <script>
+    // Hide motion-driven elements only when Motion will run; reveal them if it never loads.
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("has-motion");
+      setTimeout(() => { if (!window.Motion) document.documentElement.classList.remove("has-motion"); }, 4000);
+    }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <button type="button" class="to-top" aria-label="Back to top" tabindex="-1">
+    <svg viewBox="0 0 52 52" fill="none" stroke-width="2.5" aria-hidden="true">
+      <circle class="ring-track" cx="26" cy="26" r="24" />
+      <circle class="ring" cx="26" cy="26" r="24" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" />
+    </svg>
+    <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M4 7l4-4 4 4"/></svg>
+  </button>
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero__scrim"></div>
+
+    <header class="nav reveal" id="siteNav" style="--d:0">
+      <a href="#hero" class="logo" aria-label="NuumX home" translate="no">Nuum<span>X</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="navLinks">
+          <li class="nav__indicator" aria-hidden="true"></li>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#builder">AI Employees</a></li>
+          <li><a href="#paths">Solutions</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#experts">Experts</a></li>
+        </ul>
+      </nav>
+      <div class="nav__end">
+        <a href="#builder" class="btn btn--nav">
+          Hire AI Employees
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+        </a>
+        <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+          <svg class="i-open" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+          <svg class="i-close" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="hero__content">
+      <p class="eyebrow reveal" style="--d:2">Your AI Team, On Demand</p>
+      <h1 class="headline reveal" style="--d:3">
+        Hire AI Employees<br />
+        Built for <span class="hl">Real Work</span>
+      </h1>
+      <p class="sub reveal" style="--d:4">
+        Specialised AI employees that think, work and deliver — so you can move faster, reduce costs and scale without limits.
+      </p>
+
+      <div class="ctas reveal" style="--d:5">
+        <a href="#builder" class="btn btn--primary">
+          Hire Your AI Team
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+        </a>
+        <a href="#builder" class="btn btn--ghost">Explore Roles</a>
+      </div>
+
+      <div class="divider reveal" style="--d:6"></div>
+
+      <ul class="features reveal" style="--d:7">
+        <li>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+            <path d="M12 2.5l2.3 2 3-.4.9 2.9 2.7 1.4-.9 2.9 1.2 2.8-2.5 1.7-.4 3-3 .2-2 2.3L12 19.8 9.4 21.3l-2-2.3-3-.2-.4-3-2.5-1.7L2.7 11.3 1.8 8.4l2.7-1.4.9-2.9 3 .4z" opacity=".55"/>
+            <path d="M9 9.5a1.5 1.5 0 012.3-1.2L12 9l.7-.7A1.5 1.5 0 0115 9.5c0 1.8-3 3.5-3 3.5s-3-1.7-3-3.5zM8 15.5c1.2-.8 2.5-1.2 4-1.2s2.8.4 4 1.2"/>
+          </svg>
+          <span>Specialised<br />AI Agents</span>
+        </li>
+        <li>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4.5" y="4.5" width="15" height="15" rx="2.5" opacity=".55"/>
+            <path d="M12 8.5v7M9 12.5l3 3 3-3M9 18h6"/>
+          </svg>
+          <span>Scales with<br />Your Business</span>
+        </li>
+        <li>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.8l7.5 2.8v5.6c0 4.6-3.1 8.4-7.5 10-4.4-1.6-7.5-5.4-7.5-10V5.6z" opacity=".55"/>
+            <path d="M12 8.5l3 3-3 3-3-3z"/>
+          </svg>
+          <span>Secure &amp;<br />Reliable</span>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#organisation" class="scroll-cue reveal" style="--d:8">
+      <div class="mouse"></div>
+      <span>Scroll to explore</span>
+    </a>
+  </section>
+
+  <main id="main" tabindex="-1">
+    <!-- ============ Organisation ============ -->
+    <section class="section org" id="organisation">
+      <div class="container org__grid">
+        <div class="org__visual">
+          <div class="org__halo" aria-hidden="true"></div>
+          <img src="assets/team.webp" width="1174" height="978" decoding="async"
+               alt="Four teammates gathered around a laptop, working together" />
+          <div class="float-chip float-chip--a">
+            <span class="dot"></span> Every AI employee has a human manager
+          </div>
+        </div>
+
+        <div class="org__copy">
+          <p class="kicker sr">AI-first enterprise</p>
+          <h2 class="h2 sr">Build the team your business <span class="hl">needs next.</span></h2>
+          <p class="lede sr">
+            Create your organisation, choose the departments that need help and add role-based AI employees.
+            Build it yourself, or have a Nuumx Forward Deployed Engineer build it with you.
+          </p>
+
+          <div class="orgchart" aria-label="Example AI organisation">
+            <div class="orgchart__head">
+              <span>Your AI organisation</span>
+              <span class="pill">Build and scale</span>
+            </div>
+            <div class="orgchart__root">
+              <span class="avatar avatar--solid">N</span>
+              <div>
+                <strong>Your organisation</strong>
+                <small>People lead. AI helps execute.</small>
+              </div>
+            </div>
+            <div class="orgchart__branches">
+              <span class="orgchart__stem" aria-hidden="true"></span>
+              <span class="orgchart__bar" aria-hidden="true"></span>
+              <div class="orgchart__dept">
+                <div class="orgchart__dept-head">
+                  <span class="avatar">S</span>
+                  <div><strong>Sales</strong><small>Managed by your Head of Sales</small></div>
+                </div>
+                <ul>
+                  <li><span class="ai-tag">AI</span> Lead Qualifier</li>
+                  <li><span class="ai-tag">AI</span> Proposal Writer</li>
+                </ul>
+              </div>
+              <div class="orgchart__dept">
+                <div class="orgchart__dept-head">
+                  <span class="avatar">C</span>
+                  <div><strong>Support</strong><small>Managed by your Support Lead</small></div>
+                </div>
+                <ul>
+                  <li><span class="ai-tag">AI</span> L1 Support Agent</li>
+                  <li><span class="ai-tag">AI</span> Ticket Triage</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Paths ============ -->
+    <section class="section paths" id="paths">
+      <div class="container paths__grid">
+        <div class="paths__visual" aria-hidden="true">
+          <div class="paths__halo"></div>
+          <img src="assets/guide.webp" width="900" height="1472" loading="lazy" alt="" />
+        </div>
+
+        <div class="paths__body">
+          <p class="kicker sr">Your path</p>
+          <h2 class="h2 sr">Choose how you <span class="hl">build.</span></h2>
+          <p class="lede sr">
+            Start on your own, work alongside our team, or bring in an expert whenever you need one.
+            Whichever you pick, your organisation stays yours.
+          </p>
+
+          <ol class="path-list">
+            <li class="path">
+              <span class="path__num">01</span>
+              <div class="path__text">
+                <h3>Build it yourself <span class="tag">Self-serve</span></h3>
+                <p>Pick ready-made roles, connect your tools, test the work in a sandbox and approve go-live.</p>
+              </div>
+              <a href="#builder" class="link-arrow">Explore the builder
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            </li>
+            <li class="path is-active">
+              <span class="path__num">02</span>
+              <div class="path__text">
+                <h3>Have Nuumx build it <span class="tag">Done for you</span></h3>
+                <p>A Forward Deployed Engineer designs, deploys and hands over your AI organisation. Ongoing operation is optional.</p>
+              </div>
+              <a href="#experts" class="link-arrow">Discuss my organisation
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            </li>
+            <li class="path">
+              <span class="path__num">03</span>
+              <div class="path__text">
+                <h3>Build together <span class="tag">Hybrid</span></h3>
+                <p>Choose departments and roles now. Ask an expert to finish integrations or tune workflows later.</p>
+              </div>
+              <a href="#builder" class="link-arrow">Start a draft
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ How it works ============ -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker sr">From idea to work</p>
+          <h2 class="h2 sr">One organisation. <span class="hl">Clear responsibilities.</span></h2>
+        </div>
+
+        <div class="steps-wrap">
+        <span class="steps__fill" aria-hidden="true"></span>
+        <ol class="steps">
+          <li class="step">
+            <div class="step__icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1.2"/><rect x="3" y="16" width="6" height="5" rx="1.2"/><rect x="15" y="16" width="6" height="5" rx="1.2"/><path d="M12 8v4M6 16v-4h12v4"/></svg>
+            </div>
+            <span class="step__num">Step 01</span>
+            <h3>Map your teams</h3>
+            <p>Create your company and pick the departments where work is repetitive and measurable.</p>
+          </li>
+          <li class="step">
+            <div class="step__icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20c.8-3.6 3.3-5.5 6.5-5.5 1.3 0 2.5.3 3.5.9M18 14v6M15 17h6"/></svg>
+            </div>
+            <span class="step__num">Step 02</span>
+            <h3>Hire AI employees</h3>
+            <p>Choose roles by job description, then set headcount, manager, knowledge and tools.</p>
+          </li>
+          <li class="step">
+            <div class="step__icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 2.8v5.6c0 4.6-3.1 8.4-7.5 10-4.4-1.6-7.5-5.4-7.5-10V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg>
+            </div>
+            <span class="step__num">Step 03</span>
+            <h3>Test and approve</h3>
+            <p>Try sample tasks, define guardrails and have a person approve any external action.</p>
+          </li>
+          <li class="step">
+            <div class="step__icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M6 16l4-5 3.5 3L19 7"/><path d="M15 7h4v4"/></svg>
+            </div>
+            <span class="step__num">Step 04</span>
+            <h3>Run and improve</h3>
+            <p>Assign work, review outputs, track cost and outcomes, and add capacity as you grow.</p>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Builder ============ -->
+    <section class="section builder" id="builder">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker sr">Organisation builder</p>
+          <h2 class="h2 sr">Start with your <span class="hl">org chart.</span></h2>
+          <p class="lede sr">
+            Pick departments and roles to see a draft team and an indicative monthly cost.
+            Your draft is saved in this browser only.
+          </p>
+        </div>
+
+        <div class="builder__grid">
+          <div class="builder__main">
+            <div class="fields sr">
+              <label class="field">
+                <span>Organisation name</span>
+                <input type="text" id="orgName" name="organization" placeholder="e.g. Acme Retail…" autocomplete="organization" maxlength="60" />
+              </label>
+              <label class="field">
+                <span>Industry</span>
+                <select id="orgIndustry" name="industry">
+                  <option value="">Select an industry</option>
+                  <option>Real estate</option>
+                  <option>Retail and D2C</option>
+                  <option>Financial services</option>
+                  <option>Manufacturing</option>
+                  <option>Professional services</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="roles-head sr">
+              <h3>Choose your AI employees</h3>
+              <p>Add roles across departments. Each role reports to a person on your team.</p>
+            </div>
+
+            <div class="depts" id="depts"><!-- rendered by site.js --></div>
+
+            <!-- Compact running total, shown when the summary sits below the roles -->
+            <a href="#summary" class="builder-bar" aria-hidden="true" tabindex="-1">
+              <span class="builder-bar__meta" id="barMeta">0 AI employees · Starter plan</span>
+              <strong class="builder-bar__total" id="barTotal">₹0/mo</strong>
+              <span class="builder-bar__cta">View summary</span>
+            </a>
+          </div>
+
+          <aside class="summary sr" id="summary" aria-labelledby="sumName">
+            <img class="summary__figure" src="assets/builder.webp" width="900" height="1377" loading="lazy" alt="" aria-hidden="true" />
+            <div class="summary__card">
+              <p class="kicker kicker--sm">Your AI organisation</p>
+              <h3 class="summary__name" id="sumName">Your organisation</h3>
+              <p class="summary__meta" id="sumMeta">0 AI employees · Starter plan</p>
+              <p class="visually-hidden" id="sumAnnounce" aria-live="polite"></p>
+
+              <div class="summary__list" id="sumList">
+                <p class="summary__empty">Your selected roles will appear here.</p>
+              </div>
+
+              <div class="summary__total">
+                <span>Estimated monthly total from</span>
+                <strong id="sumTotal">₹0<small>/mo</small></strong>
+                <p>Platform plan plus selected AI employees. Excludes GST and usage overages.</p>
+              </div>
+
+              <a href="#pricing" class="btn btn--primary btn--block" id="reviewPlan">Review plan
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+              <a href="#experts" class="btn btn--outline btn--block">Get expert help with this draft</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Pricing ============ -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker sr">Indicative pricing</p>
+          <h2 class="h2 sr">Plan your spend <span class="hl">before you commit.</span></h2>
+          <p class="lede sr">
+            A platform plan plus a monthly price per AI employee. Prices are indicative, exclude GST
+            and are confirmed with you before purchase.
+          </p>
+        </div>
+
+        <div class="plans">
+          <article class="plan" data-plan="starter">
+            <span class="plan__badge">Your draft</span>
+            <h3>Starter</h3>
+            <p class="plan__price">₹0<small>/month</small></p>
+            <p class="plan__note">Platform fee</p>
+            <ul>
+              <li>1 department</li>
+              <li>Up to 3 AI employees</li>
+              <li>3 users</li>
+            </ul>
+            <a href="#builder" class="btn btn--outline btn--block">Select Starter</a>
+          </article>
+          <article class="plan" data-plan="growth">
+            <span class="plan__badge">Your draft</span>
+            <h3>Growth</h3>
+            <p class="plan__price">₹9,999<small>/month</small></p>
+            <p class="plan__note">Platform fee</p>
+            <ul>
+              <li>5 departments</li>
+              <li>Up to 15 AI employees</li>
+              <li>Approval workflows</li>
+            </ul>
+            <a href="#builder" class="btn btn--outline btn--block">Select Growth</a>
+          </article>
+          <article class="plan" data-plan="scale">
+            <span class="plan__badge">Your draft</span>
+            <h3>Scale</h3>
+            <p class="plan__price">₹29,999<small>/month</small></p>
+            <p class="plan__note">Platform fee</p>
+            <ul>
+              <li>Unlimited departments</li>
+              <li>Up to 50 AI employees</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#builder" class="btn btn--outline btn--block">Select Scale</a>
+          </article>
+          <article class="plan plan--dark" data-plan="enterprise">
+            <span class="plan__badge">Your draft</span>
+            <h3>Enterprise</h3>
+            <p class="plan__price">Custom</p>
+            <p class="plan__note">Annual contract</p>
+            <ul>
+              <li>Custom workflows</li>
+              <li>Governance controls</li>
+              <li>Dedicated support and FDE services</li>
+            </ul>
+            <a href="#experts" class="btn btn--light btn--block">Talk to us</a>
+          </article>
+        </div>
+
+        <div class="tiers sr">
+          <p class="tiers__label">AI employee tiers</p>
+          <div class="tiers__row">
+            <div class="tier"><span>Standard</span><strong>₹4,999<small>/mo</small></strong></div>
+            <div class="tier"><span>Professional</span><strong>₹9,999<small>/mo</small></strong></div>
+            <div class="tier"><span>Expert</span><strong>₹19,999<small>/mo</small></strong></div>
+          </div>
+          <p class="tiers__foot">Starting prices. Included task credits vary by tier. Annual billing includes two months free, subject to final terms.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experts ============ -->
+    <section class="section experts" id="experts">
+      <div class="container">
+        <div class="experts__panel">
+          <div class="experts__sphere" aria-hidden="true"></div>
+          <div class="experts__spotlight" aria-hidden="true"></div>
+          <div class="experts__copy">
+            <p class="kicker kicker--light sr">Nuumx Forward Deployed Engineers</p>
+            <h2 class="h2 h2--light sr">Bring an expert <span class="hl hl--light">into your business.</span></h2>
+            <p class="lede lede--light sr">
+              An FDE works inside your organisation with scoped access to design roles, connect tools,
+              test workflows and get your team ready for go-live. You review the proposed design before
+              any plan charges begin.
+            </p>
+
+            <div class="services">
+              <div class="service"><span>Quick Start Build</span><strong>From ₹49,000</strong><small>One-time</small></div>
+              <div class="service"><span>Department Build</span><strong>From ₹1,50,000</strong><small>One-time</small></div>
+              <div class="service"><span>Expert hour pack</span><strong>From ₹30,000</strong><small>Per 10 hours</small></div>
+              <div class="service"><span>Ongoing Run service</span><strong>From ₹35,000</strong><small>Per month</small></div>
+            </div>
+
+            <div class="experts__cta sr">
+              <a href="#contact" class="btn btn--primary">Discuss an FDE engagement
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+              <small>Indicative, excluding GST. Scope and terms are confirmed in a proposal.</small>
+            </div>
+          </div>
+          <img class="experts__figure" src="assets/expert.webp" width="900" height="1383" loading="lazy"
+               alt="A Nuumx Forward Deployed Engineer holding a coffee" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div class="faq__intro">
+          <p class="kicker sr">Questions</p>
+          <h2 class="h2 sr">Before you <span class="hl">build.</span></h2>
+          <p class="lede sr">Something else on your mind? Our team is happy to walk you through it.</p>
+          <a href="#contact" class="link-arrow sr">Talk to our team
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        </div>
+
+        <div class="faq__list">
+          <details class="qa" open>
+            <summary>Does an AI employee act without approval?</summary>
+            <p>Only within the permissions and guardrails you approve for its role. External actions can require a person to review them before anything is sent or changed.</p>
+          </details>
+          <details class="qa">
+            <summary>Can Nuumx finish an organisation I started?</summary>
+            <p>Yes. On the hybrid path you hand your draft to an FDE, keep every choice you made, and get help with integrations or workflows.</p>
+          </details>
+          <details class="qa">
+            <summary>What happens after I select a plan?</summary>
+            <p>You set up your account and payment, connect knowledge and tools, test in a sandbox, and approve go-live as the owner.</p>
+          </details>
+          <details class="qa">
+            <summary>Are these prices final?</summary>
+            <p>Not yet. They are indicative starting points. Final pricing, included task credits, taxes and commercial terms are confirmed with you before purchase.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Closing CTA ============ -->
+    <section class="section closing" id="start">
+      <div class="container">
+        <div class="closing__panel sr">
+          <div class="closing__glow" aria-hidden="true"></div>
+          <p class="kicker">Your AI team, on demand</p>
+          <h2 class="h2">Your people lead. <span class="hl">AI helps execute.</span></h2>
+          <p class="lede">Draft your AI organisation in minutes, or let an expert build it with you.</p>
+          <div class="closing__ctas">
+            <a href="#builder" class="btn btn--primary">Build my AI organisation
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+            <a href="#experts" class="btn btn--outline">Have Nuumx build it</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <a href="#hero" class="logo logo--dark" aria-label="NuumX home" translate="no">Nuum<span>X</span></a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#builder">AI Employees</a>
+        <a href="#paths">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#experts">Experts</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <p class="footer__copy">© 2026 NuumX. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/motion@12.43.0/dist/motion.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/motion.js"></script>
+</body>
+</html>
