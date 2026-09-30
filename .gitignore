@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Local tooling
+.claude/
+
+# Design sources (the site uses the optimised copies in assets/ and hero-frames/)
+hero.png
+*.mp4
+visual-assets/
